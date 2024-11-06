@@ -1,0 +1,31 @@
+1.Inter-service Communications:
+    1. Synchronous communication.
+        Rest template:(getForObject(), exchange())
+    2. Asynchronous Communication.
+        Kafka
+        RabbitMQ
+2. Service Registry :
+       Spring cloud Eureka Server
+    Advantage:
+       1. Dynamic service discovery instead of hard coding microservices urls.
+       2. Service discovery will support load balancing also.
+       3. In-case if any service not available, service registry manage the situation in a defined way.
+       4. Periodically monitor services and its health.
+       5. Eureka Service Registry intently work with other registered microservices in the distributed systems.
+       6. We can't directly access services via service registry directly.for that we need API gateway.
+       7. Heart Beat Mechanism :
+                Every microservice after registering itself with service registry server.It will send heart beat
+                periodically to the service registy server to notifying its existance.
+
+3. Object Mapper:
+       1.Maps json values to respective entity variables..
+
+4. API Gateway:
+
+5. Monitoring:
+
+6. RestTemplate:
+       A loadbalanced(@loadbalanced) instance of RestTemplate class can only can microservices based on its registered name of Service registry.
+
+7. Open feign:
+      Client side load balancing automatically handled by open feign.
